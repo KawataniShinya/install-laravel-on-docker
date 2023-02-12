@@ -22,6 +22,7 @@ docker-compose ps
 ```
 docker-compose exec app bash
 cd /var/www/app
+rm .[^\.]*
 composer create-project laravel/laravel:^9 --prefer-dist .
 ```
 
